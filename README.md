@@ -41,6 +41,13 @@ cmake -B build -S .
 cmake --build build
 ```
 
+
+## Run it
+
+```
+./build/Libre_Player
+```
+
 ## Default shortcuts
 
 ```
@@ -54,9 +61,4 @@ VolumeUp=Up
 VolumeDown=Down
 Mute=M
 ```
-
-## Run it
-
-```
-./build/Libre_Player
 
