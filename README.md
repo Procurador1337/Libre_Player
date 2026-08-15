@@ -60,6 +60,12 @@ cmake --build build
 ./build/Libre_Player
 ```
 
+## LFS install
+
+```
+https://github.com/fusion809/lfs_packaging/blob/master/Libre_Player/build.sh
+```
+
 ## Default shortcuts
 
 ```
