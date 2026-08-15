@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(MediaPlayer VERSION 0.1 LANGUAGES CXX)
+project(Libre_Player VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -30,7 +30,7 @@ set(PROJECT_SOURCES
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
-    qt_add_executable(MediaPlayer
+    qt_add_executable(Libre_Player
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         shortcuts.h shortcuts.cpp
@@ -42,13 +42,13 @@ else()
 
     if(ANDROID)
 
-        add_library(MediaPlayer SHARED
+        add_library(Libre_Player SHARED
             ${PROJECT_SOURCES}
         )
 
     else()
 
-        add_executable(MediaPlayer
+        add_executable(Libre_Player
             ${PROJECT_SOURCES}
         )
 
@@ -56,22 +56,22 @@ else()
 
 endif()
 
-target_include_directories(MediaPlayer PRIVATE
+target_include_directories(Libre_Player PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-target_link_libraries(MediaPlayer PRIVATE
+target_link_libraries(Libre_Player PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Multimedia
 )
 
 if(${QT_VERSION} VERSION_LESS 6.1.0)
     set(BUNDLE_ID_OPTION
-        MACOSX_BUNDLE_GUI_IDENTIFIER com.example.MediaPlayer
+        MACOSX_BUNDLE_GUI_IDENTIFIER com.example.Libre_Player
     )
 endif()
 
-set_target_properties(MediaPlayer PROPERTIES
+set_target_properties(Libre_Player PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING
@@ -82,12 +82,12 @@ set_target_properties(MediaPlayer PROPERTIES
 
 include(GNUInstallDirs)
 
-install(TARGETS MediaPlayer
+install(TARGETS Libre_Player
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(MediaPlayer)
+    qt_finalize_executable(Libre_Player)
 endif()
