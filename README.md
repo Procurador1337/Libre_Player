@@ -20,21 +20,21 @@ Libre Player is a lightweight Qt6 desktop audio player.
 
 # Ubuntu/Debian
 
-```
+```bash
 sudo apt install build-essential cmake qt6-base-dev qt6-multimedia-dev
 ```
 
 
 # Fedora
 
-```
+```bash
 sudo dnf install cmake qt6-qtbase-devel qt6-qtmultimedia-devel
 ```
 
 
 # Arch
 
-```
+```bash
 sudo pacman -S cmake qt6-base qt6-multimedia
 ```
 
