@@ -16,7 +16,7 @@ Libre Player is a lightweight Qt6 desktop audio player.
 
 - Adjustable UI scaling
 
-# Requires QT6 dev tools to built.
+# Requires QT6 dev tools to build.
 
 # Ubuntu/Debian
 sudo apt install build-essential cmake qt6-base-dev qt6-multimedia-dev
@@ -27,18 +27,23 @@ sudo dnf install cmake qt6-qtbase-devel qt6-qtmultimedia-devel
 # Arch
 sudo pacman -S cmake qt6-base qt6-multimedia
 
-# Clone it
+## Clone it
 
+```bash
 git clone https://github.com/Procurador1337/Libre_Player.git
 cd Libre_Player
+```
 
-# Configure and build
+## Configure and build
 
+```bash
 cmake -B build -S .
 cmake --build build
+```
 
-# Default shortcuts:
+## Default shortcuts
 
+```
 PlayPause=Space
 Stop=S
 Previous=Left
@@ -48,3 +53,4 @@ SeekForward=Ctrl+Right
 VolumeUp=Up
 VolumeDown=Down
 Mute=M
+```
