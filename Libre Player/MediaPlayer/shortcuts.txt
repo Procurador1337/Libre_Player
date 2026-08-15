@@ -1,0 +1,9 @@
+PlayPause=Space
+Stop=S
+Previous=Left
+Next=Right
+SeekBackward=Ctrl+Left
+SeekForward=Ctrl+Right
+VolumeUp=Up
+VolumeDown=Down
+Mute=M
