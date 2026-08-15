@@ -54,3 +54,9 @@ VolumeUp=Up
 VolumeDown=Down
 Mute=M
 ```
+
+## Run it
+
+```
+./build/Libre_Player
+
